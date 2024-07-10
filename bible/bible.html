@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        select {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .verse {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bible Reader</h1>
+    <div>
+        <label for="book">Select a Book:</label>
+        <select id="book" onchange="loadChapters()">
+            <option value="">Select a Book</option>
+            <!-- Options will be dynamically loaded here -->
+        </select>
+    </div>
+    <div>
+        <label for="chapter">Select a Chapter:</label>
+        <select id="chapter" onchange="loadChapter()">
+            <option value="">Select a Chapter</option>
+            <!-- Options will be dynamically loaded here -->
+        </select>
+    </div>
+    <div id="chapter-content">
+        <!-- Chapter content will be dynamically loaded here -->
+    </div>
+   
+ <script src="css/javascripts.js" async></script>
+</body>
+</html>
